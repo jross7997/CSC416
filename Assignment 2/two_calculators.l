@@ -1,0 +1,30 @@
+; File: two_calculators.l
+; Line: Two calculators written for CSC 416. One reads from left to right, the other reads right to left
+; Both Calculators read functions of the form "operand operator operand operator operand"
+
+(defun calculator-LR(&aux input operator1 operator2 operands1 operand2 result)
+	(format t "Expression? ")
+	(setf input (list (read) (read) (read) (read) (read) ) )
+	(setf operator1 (nth 1 input) )
+	(setf operator2 (nth 3 input) )
+	(setf operands1 (list (nth 0 input) (nth 2 input) ) )
+	(setf operand2 (nth 4 input))
+	(setf first_result (apply operator1 operands1) )
+	(setf result (apply operator2 (list first_result operand2) ) )
+	(format t "Result:  ~A~%" result)
+	(calculator-LR)
+	)
+	
+(defun calculator-RL(&aux input operator1 operator2 operand1 operand2 operand3 result)
+	(format t "Expression? ")
+	(setf input (list (read) (read) (read) (read) (read) ))
+	(setf operator1 (nth 3 input) )
+	(setf operator2 (nth 1 input) )
+	(setf operand1 (nth 4 input) )
+	(setf operand2 (nth 2 input) )
+	(setf operand3 (nth 0 input) )
+	(setf first_result (funcall operator1 operand1 operand2))
+	(setf result (funcall operator2 first_result operand3) )
+	(format t "Result:  ~A~%" result)
+	(calculator-RL)
+	)
