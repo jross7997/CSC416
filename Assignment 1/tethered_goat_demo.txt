@@ -1,0 +1,47 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "tethered_goat_solution.l")
+;; Loading file tethered_goat_solution.l ...
+;; Loaded file tethered_goat_solution.l
+T
+[2]> length-barn
+100
+[3]> width-barn
+70
+[4]> length-rope
+107
+[5]> radius1
+107
+[6]> radius2
+37
+[7]> radius3
+7
+[8]> area1
+17984.047145474771394L0
+[9]> area2
+8992.023572737385697L0
+[10]> area3
+1075.2100856911067359L0
+[11]> area4
+38.484510006474967173L0
+[12]> total-area
+28089.765313909738794L0
+[13]> (bye)
+Bye.
