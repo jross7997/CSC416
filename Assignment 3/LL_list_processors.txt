@@ -1,0 +1,166 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "lp.l")
+
+;; Loading file lp.l ...
+;; Loaded file lp.l
+T
+[2]> (singleton-p ())
+
+NIL
+[3]> (singleton-p '(one))
+
+T
+[4]> (singleton-p '(one two) )
+
+NIL
+[5]> (singleton-p '(one two three four five six seven) )
+
+NIL
+[6]> (trace rac)
+
+;; Tracing function RAC.
+(RAC)
+[7]> (rac '(one))
+
+1. Trace: (RAC '(ONE))
+1. Trace: RAC ==> ONE
+ONE
+[8]>  (rac '(one two three four five) )
+
+1. Trace: (RAC '(ONE TWO THREE FOUR FIVE))
+2. Trace: (RAC '(TWO THREE FOUR FIVE))
+3. Trace: (RAC '(THREE FOUR FIVE))
+4. Trace: (RAC '(FOUR FIVE))
+5. Trace: (RAC '(FIVE))
+5. Trace: RAC ==> FIVE
+4. Trace: RAC ==> FIVE
+3. Trace: RAC ==> FIVE
+2. Trace: RAC ==> FIVE
+1. Trace: RAC ==> FIVE
+FIVE
+[9]> (trace rdc)
+
+;; Tracing function RDC.
+(RDC)
+[10]> (rdc '(one) )
+
+1. Trace: (RDC '(ONE))
+1. Trace: RDC ==> NIL
+NIL
+[11]> (rdc '(one two three four five) )
+
+1. Trace: (RDC '(ONE TWO THREE FOUR FIVE))
+2. Trace: (RDC '(TWO THREE FOUR FIVE))
+3. Trace: (RDC '(THREE FOUR FIVE))
+4. Trace: (RDC '(FOUR FIVE))
+5. Trace: (RDC '(FIVE))
+5. Trace: RDC ==> NIL
+4. Trace: RDC ==> (FOUR)
+3. Trace: RDC ==> (THREE FOUR)
+2. Trace: RDC ==> (TWO THREE FOUR)
+1. Trace: RDC ==> (ONE TWO THREE FOUR)
+(ONE TWO THREE FOUR)
+[12]> (untrace rac)
+
+(RAC)
+[13]> (untrace rdc)
+
+(RDC)
+[14]> (trace snoc)
+
+;; Tracing function SNOC.
+(SNOC)
+[15]> (snoc 'blue '())
+
+1. Trace: (SNOC 'BLUE 'NIL)
+1. Trace: SNOC ==> (BLUE)
+(BLUE)
+[16]> (snoc 'blue '(red))
+
+1. Trace: (SNOC 'BLUE '(RED))
+2. Trace: (SNOC 'BLUE 'NIL)
+2. Trace: SNOC ==> (BLUE)
+1. Trace: SNOC ==> (RED BLUE)
+(RED BLUE)
+[17]> (snoc 'blue '(indigo cyan teal periwinkle) )
+
+1. Trace: (SNOC 'BLUE '(INDIGO CYAN TEAL PERIWINKLE))
+2. Trace: (SNOC 'BLUE '(CYAN TEAL PERIWINKLE))
+3. Trace: (SNOC 'BLUE '(TEAL PERIWINKLE))
+4. Trace: (SNOC 'BLUE '(PERIWINKLE))
+5. Trace: (SNOC 'BLUE 'NIL)
+5. Trace: SNOC ==> (BLUE)
+4. Trace: SNOC ==> (PERIWINKLE BLUE)
+3. Trace: SNOC ==> (TEAL PERIWINKLE BLUE)
+2. Trace: SNOC ==> (CYAN TEAL PERIWINKLE BLUE)
+1. Trace: SNOC ==> (INDIGO CYAN TEAL PERIWINKLE BLUE)
+(INDIGO CYAN TEAL PERIWINKLE BLUE)
+[18]> (untrace snoc)
+
+(SNOC)
+[19]> (trace palindrome-p)
+
+;; Tracing function PALINDROME-P.
+(PALINDROME-P)
+[20]> (palindrome-p () )
+
+1. Trace: (PALINDROME-P 'NIL)
+1. Trace: PALINDROME-P ==> T
+T
+[21]> (palindrome-p '(palindrome) )
+
+1. Trace: (PALINDROME-P '(PALINDROME))
+1. Trace: PALINDROME-P ==> T
+T
+[22]> (palindrome-p '(clos sloc) )
+
+1. Trace: (PALINDROME-P '(CLOS SLOC))
+1. Trace: PALINDROME-P ==> NIL
+NIL
+[23]> (palindrome-p '(1 2 3 4 5 4 3 2 1) )
+
+1. Trace: (PALINDROME-P '(1 2 3 4 5 4 3 2 1))
+2. Trace: (PALINDROME-P '(2 3 4 5 4 3 2))
+3. Trace: (PALINDROME-P '(3 4 5 4 3))
+4. Trace: (PALINDROME-P '(4 5 4))
+5. Trace: (PALINDROME-P '(5))
+5. Trace: PALINDROME-P ==> T
+4. Trace: PALINDROME-P ==> T
+3. Trace: PALINDROME-P ==> T
+2. Trace: PALINDROME-P ==> T
+1. Trace: PALINDROME-P ==> T
+T
+[24]> (palindrome-p '(HEY HEY MY MY MY MY HEY HEY) )
+
+1. Trace: (PALINDROME-P '(HEY HEY MY MY MY MY HEY HEY))
+2. Trace: (PALINDROME-P '(HEY MY MY MY MY HEY))
+3. Trace: (PALINDROME-P '(MY MY MY MY))
+4. Trace: (PALINDROME-P '(MY MY))
+5. Trace: (PALINDROME-P 'NIL)
+5. Trace: PALINDROME-P ==> T
+4. Trace: PALINDROME-P ==> T
+3. Trace: PALINDROME-P ==> T
+2. Trace: PALINDROME-P ==> T
+1. Trace: PALINDROME-P ==> T
+T
+[25]> (bye)
+
+Bye.

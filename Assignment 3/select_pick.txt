@@ -1,0 +1,71 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "lp.l")
+
+;; Loading file lp.l ...
+;; Loaded file lp.l
+T
+[2]> (trace select)
+
+;; Tracing function SELECT.
+(SELECT)
+[3]> (select 0 '(one two three) )
+
+1. Trace: (SELECT '0 '(ONE TWO THREE))
+1. Trace: SELECT ==> ONE
+ONE
+[4]> (select 1 '(one two three) )
+
+1. Trace: (SELECT '1 '(ONE TWO THREE))
+2. Trace: (SELECT '0 '(TWO THREE))
+2. Trace: SELECT ==> TWO
+1. Trace: SELECT ==> TWO
+TWO
+[5]> (select 2 '(one two three) )
+
+1. Trace: (SELECT '2 '(ONE TWO THREE))
+2. Trace: (SELECT '1 '(TWO THREE))
+3. Trace: (SELECT '0 '(THREE))
+3. Trace: SELECT ==> THREE
+2. Trace: SELECT ==> THREE
+1. Trace: SELECT ==> THREE
+THREE
+[6]> (untrace select)
+
+(SELECT)
+[7]> (pick '(one two three))
+
+TWO
+[8]> (pick '(one two three))
+
+TWO
+[9]> (pick '(one two three))
+
+TWO
+[10]> (pick '(one two three) )
+
+TWO
+[11]> (pick '(one two three) )
+
+ONE
+[12]> (bye)
+
+Bye.
+c:/Users/Justin/Desktop/CSC416 $ 

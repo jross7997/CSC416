@@ -1,0 +1,90 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "lp.l")
+
+;; Loading file lp.l ...
+;; Loaded file lp.l
+T
+[2]> (filter-in '(> 10) '(9 10 11 12 13 14 5) )
+
+(9 5)
+[3]> (filter-in '(< 10) '(9 10 11 12 13 14 5) )
+
+(11 12 13 14)
+[4]> (filter-in '(= 10) '(8 9 10 10 10 10 11) )
+
+(10 10 10 10)
+[5]> (filter-in '(not) '(nil t t t t nil nil) )
+
+(NIL NIL NIL)
+[6]> (trace filter-in)
+
+;; Tracing function FILTER-IN.
+(FILTER-IN)
+[7]> (filter-in '(equal 2) '( 1 2 3 3 2 1) )
+
+1. Trace: (FILTER-IN '(EQUAL 2) '(1 2 3 3 2 1))
+2. Trace: (FILTER-IN '(EQUAL 2) '(2 3 3 2 1))
+3. Trace: (FILTER-IN '(EQUAL 2) '(3 3 2 1))
+4. Trace: (FILTER-IN '(EQUAL 2) '(3 2 1))
+5. Trace: (FILTER-IN '(EQUAL 2) '(2 1))
+6. Trace: (FILTER-IN '(EQUAL 2) '(1))
+7. Trace: (FILTER-IN '(EQUAL 2) 'NIL)
+7. Trace: FILTER-IN ==> NIL
+6. Trace: FILTER-IN ==> NIL
+5. Trace: FILTER-IN ==> (2)
+4. Trace: FILTER-IN ==> (2)
+3. Trace: FILTER-IN ==> (2)
+2. Trace: FILTER-IN ==> (2 2)
+1. Trace: FILTER-IN ==> (2 2)
+(2 2)
+[8]> (filter-out '(> 10) '(9 10 11 12 13 14 5) )
+
+(10 11 12 13 14)
+[9]> (filter-out '(< 10) '(9 10 11 12 13 14 5) )
+
+(9 10 5)
+[10]> (filter-out '(not) '(nil t t t t nil nil) )
+
+(T T T T)
+[11]> (trace filter-out)
+
+;; Tracing function FILTER-OUT.
+(FILTER-OUT)
+[12]> (filter-out '(equal 2) '(1 2 3 3 2 1) )
+
+1. Trace: (FILTER-OUT '(EQUAL 2) '(1 2 3 3 2 1))
+2. Trace: (FILTER-OUT '(EQUAL 2) '(2 3 3 2 1))
+3. Trace: (FILTER-OUT '(EQUAL 2) '(3 3 2 1))
+4. Trace: (FILTER-OUT '(EQUAL 2) '(3 2 1))
+5. Trace: (FILTER-OUT '(EQUAL 2) '(2 1))
+6. Trace: (FILTER-OUT '(EQUAL 2) '(1))
+7. Trace: (FILTER-OUT '(EQUAL 2) 'NIL)
+7. Trace: FILTER-OUT ==> NIL
+6. Trace: FILTER-OUT ==> (1)
+5. Trace: FILTER-OUT ==> (1)
+4. Trace: FILTER-OUT ==> (3 1)
+3. Trace: FILTER-OUT ==> (3 3 1)
+2. Trace: FILTER-OUT ==> (3 3 1)
+1. Trace: FILTER-OUT ==> (1 3 3 1)
+(1 3 3 1)
+[13]> (bye)
+
+Bye.
