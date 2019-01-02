@@ -1,0 +1,521 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file rbg.l
+T
+[2]> (perform-crossovers-demo)
+
+
+
+Generation 1 population:
+
+
+
+the sample of individuals ...
+92    (G B R G G R B B B R B R B G G B G B B B G R R B R) 11    
+31    (G B B R B G B G G B G G B B B R G G B R G R R G R) 9     
+18    (B B B B B R G R R B G R G B G G G G B G B G G B B) 11    
+72    (R G B G B R R G B R G R G G B G B B G G G G G R R) 6     
+88    (B R B B R R B R B G B G B G G R R B R G R R R B R) 9     
+41    (G G R B R B G B R R R G G G R B R B G R G G B R R) 6     
+70    (R R R B R R R G G B B G B G G G G B R G B R G B B) 8     
+27    (R B G R R R R R R B G G R R G G R B R R B G R B R) 5     
+
+the most fit of the sample ...
+92    (G B R G G R B B B R B R B G G B G B B B G R R B R) 11    
+
+the sample of individuals ...
+91    (R R G G R R B R R G G R R G B B B B G B B R G G G) 7     
+9     (B B R R B B R B R R B G R G G G G G B R R R R R R) 7     
+46    (R G G B B G G R R G G G B R R R G R B R G R R G G) 4     
+78    (B R G B B G G R R R R G G R R R G B R B B B G B B) 9     
+27    (R B G R R R R R R B G G R R G G R B R R B G R B R) 5     
+37    (G R B B B B B G B G G G B R G B G G B R R R R G G) 9     
+40    (B B R R G B B B G R G B B B R R B G R B R G B R R) 11    
+9     (B B R R B B R B R R B G R G G G G G B R R R R R R) 7     
+
+the most fit of the sample ...
+40    (B B R R G B B B G R G B B B R R B G R B R G B R R) 11    
+
+Selected mother = 
+92    (G B R G G R B B B R B R B G G B G B B B G R R B R) 11    
+Selected father = 
+40    (B B R R G B B B G R G B B B R R B G R B R G B R R) 11    
+The crossover = 
+0     (G B R G G R B B B R B R B G G B G B B B G R B R R) 11    
+The possibly mutated individual = 
+0     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+The renumbered individual = 
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+
+
+
+the sample of individuals ...
+72    (R G B G B R R G B R G R G G B G B B G G G G G R R) 6     
+80    (G R B R B G G R B G G G B G R R R B R R R B G B B) 8     
+48    (R R B R G B B R R G G B G G B R R B R G R B B R B) 9     
+84    (R G B R R B G B G B R B B R G G G R G G R B R B G) 8     
+68    (B G R R G G B R R B B B R G G R G G R R R R G R G) 5     
+87    (B B R R G G R G R B R G G B G G R B B G B B G G R) 8     
+13    (G R G B R B G R B R G G R G G G B R B B B G B G G) 8     
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+
+the most fit of the sample ...
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+
+the sample of individuals ...
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+37    (G R B B B B B G B G G G B R G B G G B R R R R G G) 9     
+9     (B B R R B B R B R R B G R G G G G G B R R R R R R) 7     
+46    (R G G B B G G R R G G G B R R R G R B R G R R G G) 4     
+96    (B G G G R G G B G B B R R B B B R B B R G B R B B) 12    
+47    (R G R R G G R G G R G B B B G B B G G R G G G G G) 5     
+3     (B B B B B G B G G R B B R R G G B R B G R G B R G) 11    
+49    (G G G B G G B R G G G R G G B G B B B R R G G G B) 7     
+
+the most fit of the sample ...
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+
+Selected mother = 
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+Selected father = 
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+The crossover = 
+0     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+The possibly mutated individual = 
+0     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+The renumbered individual = 
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+
+
+
+the sample of individuals ...
+27    (R B G R R R R R R B G G R R G G R B R R B G R B R) 5     
+59    (G G G G G B R R R G R R B G B B B G R R G G G R G) 5     
+66    (B G R R G R B G G R B G B R G R R B G B R G B G G) 7     
+62    (B R G G B R R R G R G G B G R R B B R G G B B B G) 8     
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+31    (G B B R B G B G G B G G B B B R G G B R G R R G R) 9     
+56    (B B G G B G G G G B G R R R R G B R G B G G R R B) 7     
+4     (R B G G B B B R R R G B G R G G R R B B R B G R G) 8     
+
+the most fit of the sample ...
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+
+the sample of individuals ...
+61    (G R B B B B G G G G R R R B R G R B B R G G G R R) 7     
+83    (R G G R G B G R B B R G R G R G B B B R G G G R G) 6     
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+20    (G R B G G B R G G G G R B R R G R G G G G G B R R) 4     
+91    (R R G G R R B R R G G R R G B B B B G B B R G G G) 7     
+38    (G B G B B B B R R B R G R B G G R G R G R R R B R) 8     
+44    (G R B R R G G B G R B G G R B B B G R G G G B G B) 8     
+66    (B G R R G R B G G R B G B R G R R B G B R G B G G) 7     
+
+the most fit of the sample ...
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+
+Selected mother = 
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+Selected father = 
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+The crossover = 
+0     (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+The possibly mutated individual = 
+0     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+The renumbered individual = 
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+
+
+
+the sample of individuals ...
+55    (G B G R B R G G B G R B G G G R G R R G R R B B R) 6     
+50    (B G G R G G B G G G R G G R R G B B B G G R B B B) 8     
+91    (R R G G R R B R R G G R R G B B B B G B B R G G G) 7     
+90    (R R R B G B B G B B B R G R G G B R R B G B B G G) 10    
+72    (R G B G B R R G B R G R G G B G B B G G G G G R R) 6     
+55    (G B G R B R G G B G R B G G G R G R R G R R B B R) 6     
+37    (G R B B B B B G B G G G B R G B G G B R R R R G G) 9     
+100   (R R B B G B R R R G B R G R R R R R B B G R R B B) 8     
+
+the most fit of the sample ...
+90    (R R R B G B B G B B B R G R G G B R R B G B B G G) 10    
+
+the sample of individuals ...
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+14    (G B B R B R R G G R G B G B B G R G B B B B G G B) 11    
+24    (G R B R R G R G G G R G B G R R B B B R G G B R B) 7     
+87    (B B R R G G R G R B R G G B G G R B B G B B G G R) 8     
+48    (R R B R G B B R R G G B G G B R R B R G R B B R B) 9     
+79    (B B R R R G B B B G R R B R R R G G G R G G G G R) 6     
+21    (G B R B R G B G G G R B G R B R R B B G G R B B G) 9     
+95    (B B B B G R B R B G G B G G G B B R G B R R R G B) 11    
+
+the most fit of the sample ...
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+
+Selected mother = 
+90    (R R R B G B B G B B B R G R G G B R R B G B B G G) 10    
+Selected father = 
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+The crossover = 
+0     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+The possibly mutated individual = 
+0     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+The renumbered individual = 
+4     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+4     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+
+
+
+the sample of individuals ...
+100   (R R B B G B R R R G B R G R R R R R B B G R R B B) 8     
+41    (G G R B R B G B R R R G G G R B R B G R G G B R R) 6     
+54    (B B G B G G G G R G G R R G G R R G G R R R R B R) 4     
+71    (R B R B B B B G G B G R B R B B B G R G G R R G B) 11    
+52    (B G B B R B G G B R G R B B B B B R R R B G R G R) 11    
+12    (R B R G G B B B B B B R G R R R R B R B R G B G B) 11    
+84    (R G B R R B G B G B R B B R G G G R G G R B R B G) 8     
+50    (B G G R G G B G G G R G G R R G B B B G G R B B B) 8     
+
+the most fit of the sample ...
+71    (R B R B B B B G G B G R B R B B B G R G G R R G B) 11    
+
+the sample of individuals ...
+77    (G G G B R R B B B G B G R G B B G G G R B G R R R) 8     
+62    (B R G G B R R R G R G G B G R R B B R G G B B B G) 8     
+45    (G B R R R R G R G B G B R R G G G R B R B B R R R) 6     
+34    (G B R G G B G R B B G G R G G G G G B B R G B G G) 7     
+40    (B B R R G B B B G R G B B B R R B G R B R G B R R) 11    
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+31    (G B B R B G B G G B G G B B B R G G B R G R R G R) 9     
+74    (G G B B R G G B B B B G G B B B R B R G R B B R G) 12    
+
+the most fit of the sample ...
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+
+Selected mother = 
+71    (R B R B B B B G G B G R B R B B B G R G G R R G B) 11    
+Selected father = 
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+The crossover = 
+0     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+The possibly mutated individual = 
+0     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+The renumbered individual = 
+5     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+4     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+5     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+
+
+
+the sample of individuals ...
+7     (G B R R B G B G R B B R B G R G G R G B B G R G G) 8     
+56    (B B G G B G G G G B G R R R R G B R G B G G R R B) 7     
+72    (R G B G B R R G B R G R G G B G B B G G G G G R R) 6     
+66    (B G R R G R B G G R B G B R G R R B G B R G B G G) 7     
+30    (B B B G R G R R R R R B G R G G R G R G R B R B R) 6     
+13    (G R G B R B G R B R G G R G G G B R B B B G B G G) 8     
+69    (R B B R R G B B G R G G R G B R B B G R B R G R B) 9     
+60    (B R R R B G R R G G B R R R R G G B R R B B B G B) 8     
+
+the most fit of the sample ...
+69    (R B B R R G B B G R G G R G B R B B G R B R G R B) 9     
+
+the sample of individuals ...
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+79    (B B R R R G B B B G R R B R R R G G G R G G G G R) 6     
+91    (R R G G R R B R R G G R R G B B B B G B B R G G G) 7     
+11    (G G B B R G B B G G B B R B B B R B G R B G B B B) 14    
+19    (G B G R G R B B R R R R B G R B G B R G B B B R R) 9     
+39    (R R R R G G B R R R R R B B G G R G R R B G R G G) 4     
+3     (B B B B B G B G G R B B R R G G B R B G R G B R G) 11    
+8     (R R R B B R R R B R B B G G G R B B G R G B R G G) 8     
+
+the most fit of the sample ...
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+
+Selected mother = 
+69    (R B B R R G B B G R G G R G B R B B G R B R G R B) 9     
+Selected father = 
+17    (B G G B B B R B B R R G B B B G G B G G B R B B B) 14    
+The crossover = 
+0     (R B B R R G B B G R G G R G B R B B G R B R B B B) 11    
+The possibly mutated individual = 
+0     (R B B R R G B B G R G G R G B R B B G R B G B B B) 11    
+The renumbered individual = 
+6     (R B B R R G B B G R G G R G B R B B G R B G B B B) 11    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+4     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+5     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+6     (R B B R R G B B G R G G R G B R B B G R B G B B B) 11    
+
+
+
+the sample of individuals ...
+3     (B B B B B G B G G R B B R R G G B R B G R G B R G) 11    
+56    (B B G G B G G G G B G R R R R G B R G B G G R R B) 7     
+97    (B R R G G R B G B G B R B R G G G R G G G B G R R) 6     
+4     (R B G G B B B R R R G B G R G G R R B B R B G R G) 8     
+38    (G B G B B B B R R B R G R B G G R G R G R R R B R) 8     
+87    (B B R R G G R G R B R G G B G G R B B G B B G G R) 8     
+77    (G G G B R R B B B G B G R G B B G G G R B G R R R) 8     
+99    (R R G G G R B G B B R R B G R G R B G R G G R R B) 6     
+
+the most fit of the sample ...
+3     (B B B B B G B G G R B B R R G G B R B G R G B R G) 11    
+
+the sample of individuals ...
+88    (B R B B R R B R B G B G B G G R R B R G R R R B R) 9     
+25    (G B B R G R B B G B R B R R R G G G B R R G B B R) 9     
+56    (B B G G B G G G G B G R R R R G B R G B G G R R B) 7     
+51    (B R R B G B R B R R G B G G G R G R R G G B B R B) 8     
+49    (G G G B G G B R G G G R G G B G B B B R R G G G B) 7     
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+98    (G G R B B R B B R B R R B B G R B G R B G G R R G) 9     
+30    (B B B G R G R R R R R B G R G G R G R G R B R B R) 6     
+
+the most fit of the sample ...
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+
+Selected mother = 
+3     (B B B B B G B G G R B B R R G G B R B G R G B R G) 11    
+Selected father = 
+57    (R B G G R R B R B B R R B R G B G G B B G R B B B) 11    
+The crossover = 
+0     (B B B B B G B G G R B B R R G G G G B B G R B B B) 13    
+The possibly mutated individual = 
+0     (B B B B B G B G G R B B R R G G G G B B G R B B B) 13    
+The renumbered individual = 
+7     (B B B B B G B G G R B B R R G G G G B B G R B B B) 13    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+4     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+5     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+6     (R B B R R G B B G R G G R G B R B B G R B G B B B) 11    
+7     (B B B B B G B G G R B B R R G G G G B B G R B B B) 13    
+
+
+
+the sample of individuals ...
+2     (G B R R R G B R G B B G G R G G G G R G G B G R R) 5     
+29    (G B G R G B R G B R G G B G G G R R B B G B R G R) 7     
+89    (R B R G R B B B B B R B G B B B R B B R R R R R G) 12    
+2     (G B R R R G B R G B B G G R G G G G R G G B G R R) 5     
+47    (R G R R G G R G G R G B B B G B B G G R G G G G G) 5     
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+69    (R B B R R G B B G R G G R G B R B B G R B R G R B) 9     
+10    (R B B G G G G G B G B B G B G B B B G G G R B G B) 11    
+
+the most fit of the sample ...
+89    (R B R G R B B B B B R B G B B B R B B R R R R R G) 12    
+
+the sample of individuals ...
+11    (G G B B R G B B G G B B R B B B R B G R B G B B B) 14    
+43    (R R G R G G R G R B G R R G R R B B B B R R G G B) 6     
+30    (B B B G R G R R R R R B G R G G R G R G R B R B R) 6     
+92    (G B R G G R B B B R B R B G G B G B B B G R R B R) 11    
+1     (R B B B G G B B R R R G B R R B B B B G B R R G G) 11    
+70    (R R R B R R R G G B B G B G G G G B R G B R G B B) 8     
+21    (G B R B R G B G G G R B G R B R R B B G G R B B G) 9     
+29    (G B G R G B R G B R G G B G G G R R B B G B R G R) 7     
+
+the most fit of the sample ...
+11    (G G B B R G B B G G B B R B B B R B G R B G B B B) 14    
+
+Selected mother = 
+89    (R B R G R B B B B B R B G B B B R B B R R R R R G) 12    
+Selected father = 
+11    (G G B B R G B B G G B B R B B B R B G R B G B B B) 14    
+The crossover = 
+0     (R B R G R B B B B B R B G B B B R B B R B G B B B) 16    
+The possibly mutated individual = 
+0     (R B R G R B B B B B R B G B B B R B B R B R B B B) 16    
+The renumbered individual = 
+8     (R B R G R B B B B B R B G B B B R B B R B R B B B) 16    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+4     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+5     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+6     (R B B R R G B B G R G G R G B R B B G R B G B B B) 11    
+7     (B B B B B G B G G R B B R R G G G G B B G R B B B) 13    
+8     (R B R G R B B B B B R B G B B B R B B R B R B B B) 16    
+
+
+
+the sample of individuals ...
+58    (B G G B B B G B R R B B R B B R G G R R G R R B B) 11    
+71    (R B R B B B B G G B G R B R B B B G R G G R R G B) 11    
+58    (B G G B B B G B R R B B R B B R G G R R G R R B B) 11    
+4     (R B G G B B B R R R G B G R G G R R B B R B G R G) 8     
+70    (R R R B R R R G G B B G B G G G G B R G B R G B B) 8     
+52    (B G B B R B G G B R G R B B B B B R R R B G R G R) 11    
+21    (G B R B R G B G G G R B G R B R R B B G G R B B G) 9     
+32    (R B R R G G G R R B G G G B G G B G R R R G B G G) 5     
+
+the most fit of the sample ...
+58    (B G G B B B G B R R B B R B B R G G R R G R R B B) 11    
+
+the sample of individuals ...
+2     (G B R R R G B R G B B G G R G G G G R G G B G R R) 5     
+35    (B R B B R B B G R R G B B R B G R G G B G B B R R) 11    
+40    (B B R R G B B B G R G B B B R R B G R B R G B R R) 11    
+29    (G B G R G B R G B R G G B G G G R R B B G B R G R) 7     
+47    (R G R R G G R G G R G B B B G B B G G R G G G G G) 5     
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+98    (G G R B B R B B R B R R B B G R B G R B G G R R G) 9     
+91    (R R G G R R B R R G G R R G B B B B G B B R G G G) 7     
+
+the most fit of the sample ...
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+
+Selected mother = 
+58    (B G G B B B G B R R B B R B B R G G R R G R R B B) 11    
+Selected father = 
+94    (G B B B G G B B G R B R G B B G B B G R B G B R G) 12    
+The crossover = 
+0     (B G G B B B G B R R B B R B B R G G G R B G B R G) 11    
+The possibly mutated individual = 
+0     (B G G B B B G B G R B B R B B R G G G R B G B R G) 11    
+The renumbered individual = 
+9     (B G G B B B G B G R B B R B B R G G G R B G B R G) 11    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+4     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+5     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+6     (R B B R R G B B G R G G R G B R B B G R B G B B B) 11    
+7     (B B B B B G B G G R B B R R G G G G B B G R B B B) 13    
+8     (R B R G R B B B B B R B G B B B R B B R B R B B B) 16    
+9     (B G G B B B G B G R B B R B B R G G G R B G B R G) 11    
+
+
+
+the sample of individuals ...
+96    (B G G G R G G B G B B R R B B B R B B R G B R B B) 12    
+13    (G R G B R B G R B R G G R G G G B R B B B G B G G) 8     
+75    (R B G G B B G G R R B R G R G B G B G B R R G G R) 7     
+63    (R B G G B B R R B G R G G B G R B B B G R R B B B) 11    
+49    (G G G B G G B R G G G R G G B G B B B R R G G G B) 7     
+82    (R B B B B R R G G B R B B B G B B B R G B R B G B) 14    
+58    (B G G B B B G B R R B B R B B R G G R R G R R B B) 11    
+13    (G R G B R B G R B R G G R G G G B R B B B G B G G) 8     
+
+the most fit of the sample ...
+82    (R B B B B R R G G B R B B B G B B B R G B R B G B) 14    
+
+the sample of individuals ...
+62    (B R G G B R R R G R G G B G R R B B R G G B B B G) 8     
+99    (R R G G G R B G B B R R B G R G R B G R G G R R B) 6     
+50    (B G G R G G B G G G R G G R R G B B B G G R B B B) 8     
+89    (R B R G R B B B B B R B G B B B R B B R R R R R G) 12    
+12    (R B R G G B B B B B B R G R R R R B R B R G B G B) 11    
+45    (G B R R R R G R G B G B R R G G G R B R B B R R R) 6     
+67    (B G R G B G G R B G G G G B G G G B B B R G G B B) 9     
+47    (R G R R G G R G G R G B B B G B B G G R G G G G G) 5     
+
+the most fit of the sample ...
+89    (R B R G R B B B B B R B G B B B R B B R R R R R G) 12    
+
+Selected mother = 
+82    (R B B B B R R G G B R B B B G B B B R G B R B G B) 14    
+Selected father = 
+89    (R B R G R B B B B B R B G B B B R B B R R R R R G) 12    
+The crossover = 
+0     (R B B B B R R G G B R B G B B B R B B R R R R R G) 11    
+The possibly mutated individual = 
+0     (R B B B B R R G G B R B G B B B R B B R R R R R G) 11    
+The renumbered individual = 
+10    (R B B B B R R G G B R B G B B B R B B R R R R R G) 11    
+
+
+
+Generation 1 population:
+1     (G G R G G R B B B R B R B G G B G B B B G R B R R) 10    
+2     (R B G G R R B R B B R R B R G B G G B G B R B B B) 11    
+3     (G B B B G G B B G R B B G B B G B B G R B G B R G) 13    
+4     (R R R B G B B G B B B R G R G G B R R B G R B B B) 11    
+5     (R B R B B B B G G R R G B B B G G B G G B R B B B) 13    
+6     (R B B R R G B B G R G G R G B R B B G R B G B B B) 11    
+7     (B B B B B G B G G R B B R R G G G G B B G R B B B) 13    
+8     (R B R G R B B B B B R B G B B B R B B R B R B B B) 16    
+9     (B G G B B B G B G R B B R B B R G G G R B G B R G) 11    
+10    (R B B B B R R G G B R B G B B B R B B R R R R R G) 11    
+
+
+
+NIL
+[3]> 

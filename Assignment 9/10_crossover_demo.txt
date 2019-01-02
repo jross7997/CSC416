@@ -1,0 +1,71 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "tsp.l")
+
+;; Loading file tsp.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file tsp.l
+T
+[2]> (crossover-demo)
+Tst 0
+m = (K D E J A H I C G F B)
+x = (K D E I J H A C G F B)
+f = (C D K F I J H A B E G)
+Tst 1
+m = (B I E K H J F D A C G)
+x = (B E I K H J F D A C G)
+f = (A C F E I D H B J G K)
+Tst 2
+m = (A I F K G J D H B E C)
+x = (A I F K G J D H B E C)
+f = (I H F B E K J C G D A)
+Tst 3
+m = (A C H K D F B G E I J)
+x = (A C H K D F B G E I J)
+f = (H E K G A B J I F C D)
+Tst 4
+m = (F A C I J D B G E H K)
+x = (A B E J D I F H C G K)
+f = (A B E J D I F H C G K)
+Tst 5
+m = (F D H A E G B C I K J)
+x = (F D A G K I E C B H J)
+f = (A G K I E C B H F J D)
+Tst 6
+m = (J G D H K A E F C I B)
+x = (J G D H K A E F C I B)
+f = (E B I H D A F J G C K)
+Tst 7
+m = (I D J E H K C A G B F)
+x = (I D J E H K A C G B F)
+f = (E D A C G H I F K B J)
+Tst 8
+m = (C H J G K D B E A F I)
+x = (C H J K G D B E A F I)
+f = (B A D C J F H I K G E)
+Tst 9
+m = (K B I G D C F A E J H)
+x = (I F A E D C B G K J H)
+f = (I F A E D C B G K H J)
+NIL
+[3]> (bye)
+
+Bye.

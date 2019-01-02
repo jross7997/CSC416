@@ -1,0 +1,283 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "tsp.l")
+
+;; Loading file tsp.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file tsp.l
+T
+[2]> (ga-text-demo)
+
+
+
+Generation0 population ...
+
+1       (K D E J A H I C G F B)    1040    
+2       (C D K F I J H A B E G)    862     
+3       (B I E K H J F D A C G)    1099    
+4       (A C F E I D H B J G K)    998     
+5       (A I F K G J D H B E C)    718     
+6       (I H F B E K J C G D A)    1117    
+7       (A C H K D F B G E I J)    1048    
+8       (H E K G A B J I F C D)    1066    
+9       (F A C I J D B G E H K)    1087    
+10      (A B E J D I F H C G K)    865     
+11      (F D H A E G B C I K J)    886     
+12      (A G K I E C B H F J D)    862     
+13      (J G D H K A E F C I B)    1102    
+14      (E B I H D A F J G C K)    1101    
+15      (I D J E H K C A G B F)    1071    
+16      (E D A C G H I F K B J)    999     
+17      (C H J G K D B E A F I)    939     
+18      (B A D C J F H I K G E)    968     
+19      (K B I G D C F A E J H)    1126    
+20      (I F A E D C B G K H J)    1075    
+21      (A G H D E K I J C B F)    1158    
+22      (C D J E A H B I F K G)    798     
+23      (K I F J B H A E C G D)    737     
+24      (E B C I G A K J H D F)    967     
+25      (B J I H D C E K F G A)    981     
+26      (A E G C B F H K I D J)    1022    
+27      (I F J K E D H A C B G)    1024    
+28      (D J A I K H E B F C G)    1069    
+29      (D K J A C I F B H E G)    897     
+30      (K J F D I C A G H B E)    766     
+31      (D B E G K J H A F C I)    1143    
+32      (I A C F E D J B K H G)    1289    
+33      (B D C A F E G I K J H)    1069    
+34      (K G C F B H D J A E I)    1016    
+35      (K G E C B D A H J I F)    973     
+36      (G K A B D I J F E H C)    1008    
+37      (J B G A F H I E C D K)    1127    
+38      (D A G B E I C K J F H)    1134    
+39      (K F E C G H D A J I B)    999     
+40      (E D G A J I K B H C F)    971     
+41      (C A F I G B H J K E D)    1048    
+42      (B C D E G A F J H K I)    1126    
+43      (F G D H J E K C B I A)    1121    
+44      (E F G I C K J B D H A)    1154    
+45      (A B J F G E D I C K H)    1077    
+46      (C E G I H A J D F B K)    1017    
+47      (A E C J B D I H K G F)    916     
+48      (K C H G A D F E I B J)    1176    
+49      (D A C K J E I G B F H)    1182    
+50      (G H I E J C D B K A F)    1287    
+51      (H B C J K E G F I D A)    916     
+52      (K I D H B F A J C G E)    1044    
+53      (G I J D C H F E A B K)    1061    
+54      (A C K D G J F E I B H)    908     
+55      (D K I B A E H J C F G)    925     
+56      (F H I C K A E G J D B)    1106    
+57      (I J G A E D K H B C F)    948     
+58      (K J A G B D F I E C H)    979     
+59      (D H C K E I G F B J A)    1189    
+60      (A I K E B F H C D J G)    1111    
+61      (D K A J G H C E I F B)    1004    
+62      (G I K C H F J B E D A)    1028    
+63      (C B I H A J G K D E F)    991     
+64      (H E G B I J A D K C F)    1099    
+65      (J I E D G K B F H C A)    1076    
+66      (J A E K D I C H G B F)    999     
+67      (C I B F A D K G H E J)    1110    
+68      (H J A K I D G B E C F)    904     
+69      (B A H D C K G J F E I)    1034    
+70      (C H B D K J A E I G F)    796     
+71      (F H B J C D E G I K A)    1042    
+72      (C D A G J K E B F I H)    1105    
+73      (G H I F B A E J K D C)    1012    
+74      (J F G K A H E B I D C)    837     
+75      (F J I D E K H A C B G)    1010    
+76      (F I C B E H G K D A J)    768     
+77      (D C I B F E J K G A H)    1199    
+78      (K G E B J C A I F D H)    902     
+79      (C A F H J K E I G D B)    1096    
+80      (K A G C H F B J E D I)    1256    
+81      (I C J E D A H F G B K)    1217    
+82      (A I G H E J K C F D B)    1047    
+83      (B C I H E D A K J G F)    958     
+84      (H E K G J A C D I B F)    961     
+85      (D A H C K E J I B F G)    1234    
+86      (C J A K E D F B I H G)    1253    
+87      (C I B A F K J H E D G)    974     
+88      (H K D E A F B I J C G)    1182    
+89      (C G F B A E D J K H I)    1058    
+90      (A I G B F H C E K J D)    1135    
+91      (J G B E C A D K F I H)    704     
+92      (D B G I A E H K F C J)    955     
+93      (G H A J D F B E K I C)    1029    
+94      (F B K C G E A D I J H)    1185    
+95      (E J H I D F B K C G A)    1229    
+96      (I B J C H G A K F E D)    1168    
+97      (J B E G K H A I F D C)    966     
+98      (K J F G I D A B H E C)    694     
+99      (B K C F G D H J A E I)    1092    
+100     (C J F B I E A D K H G)    1130    
+
+average fitness of population 0 = 1029.07
+average fitness of population 1 = 889.46
+average fitness of population 2 = 830.81
+average fitness of population 3 = 829.82
+average fitness of population 4 = 789.65
+average fitness of population 5 = 781.82
+average fitness of population 6 = 728.76
+average fitness of population 7 = 705.94
+average fitness of population 8 = 682.36
+average fitness of population 9 = 677.99
+average fitness of population 10 = 680.01
+average fitness of population 11 = 687.92
+average fitness of population 12 = 661.03
+average fitness of population 13 = 669.34
+average fitness of population 14 = 645.17
+average fitness of population 15 = 683.0
+average fitness of population 16 = 651.08
+average fitness of population 17 = 666.82
+average fitness of population 18 = 665.77
+average fitness of population 19 = 681.39
+average fitness of population 20 = 652.69
+average fitness of population 21 = 633.79
+average fitness of population 22 = 635.24
+average fitness of population 23 = 630.81
+average fitness of population 24 = 634.7
+average fitness of population 25 = 633.5
+
+
+
+Generation25 population ...
+
+1       (J D G E F I A C K H B)    523     
+2       (J D K G F I A C E H B)    605     
+3       (J B G K F I A C E H D)    523     
+4       (J D G K F I A C E H B)    523     
+5       (G D K F I J A C E H B)    557     
+6       (J D G K E I A C F H B)    914     
+7       (J D A K F I G C E H B)    681     
+8       (J B G K F I A C E H D)    815     
+9       (J D G K F B A C E H I)    682     
+10      (F D G J K I A C E H B)    608     
+11      (I D G K F J A C H E B)    551     
+12      (J D F G K I A C E H B)    600     
+13      (J D G F K I A C H E B)    563     
+14      (J D G E F I A C K H B)    913     
+15      (J D F K G I C H E A B)    594     
+16      (J D G K F I A C H E B)    566     
+17      (J E G K F I A C D H B)    776     
+18      (J D G F B I A E C H K)    928     
+19      (J D G K F I A C E H B)    523     
+20      (J G D K F I A C E H B)    526     
+21      (I D C K F J A G E H B)    804     
+22      (J D G F K E A C I H B)    652     
+23      (I D G H F J A C K E B)    905     
+24      (J D H F I G A C E K B)    522     
+25      (J D G K F I A C E H B)    523     
+26      (J G D K F I A C E H B)    526     
+27      (J C K F I G A D E H B)    522     
+28      (J D K F I G A C H B E)    577     
+29      (J D H F I G A C E K B)    967     
+30      (J D C K F I A G E H B)    819     
+31      (J D G F K I A C H E B)    563     
+32      (J D G K F I A C E H B)    523     
+33      (J G D K F I A C E H B)    526     
+34      (I D G K F J A E H C B)    596     
+35      (J D G F K I A E C H B)    555     
+36      (J D G K F I A C E H B)    523     
+37      (J G D K F I A C E H B)    526     
+38      (J D G K F I A C H E B)    566     
+39      (J C K F I G A D E H B)    522     
+40      (J C K F I G A D E H B)    778     
+41      (J D F K G I A C E H B)    526     
+42      (J D G K F I A C E H B)    523     
+43      (J D G K F I A C E H B)    523     
+44      (I D G F K J A C E H B)    533     
+45      (J D G K F I A C E H B)    523     
+46      (J D G K F A I C E H B)    676     
+47      (J D G K F I A C E H B)    523     
+48      (J D G F K I A C H E B)    563     
+49      (J D G K F I A C E H B)    523     
+50      (I D G F K J A C E H B)    533     
+51      (J G D K F I A C E H B)    526     
+52      (J D G K F I A E C B H)    580     
+53      (J D G K F I A C E H B)    523     
+54      (J D G K F I A C E H B)    523     
+55      (J D G K F I A C E H B)    523     
+56      (K G D J F I A C E H B)    615     
+57      (J D I F K G A C E H B)    534     
+58      (J A G K F I D C E H B)    613     
+59      (C D G K F I A J E H B)    719     
+60      (J D G K B I A C E H F)    864     
+61      (J D G K F I A C B H E)    588     
+62      (J D G K F I A C E H B)    523     
+63      (J D C K F I A G E H B)    819     
+64      (J G K F I D E B H C A)    607     
+65      (J D G K F I A C B E H)    588     
+66      (J D G K F I E C A H B)    550     
+67      (J D G K F I A C E H B)    523     
+68      (J F G K D I A C E H B)    583     
+69      (J D G K F I A C E H B)    523     
+70      (J D K A F I G C E H B)    765     
+71      (I A G F K J D C E H B)    735     
+72      (J D C K F I A G E H B)    819     
+73      (J D G K F I A C E H B)    523     
+74      (J D G F K E A C H I B)    719     
+75      (J D I K G F A C E H B)    624     
+76      (J D A K F I G C E H B)    681     
+77      (J D G K F I A C E H B)    523     
+78      (J E G K F I D B H C A)    737     
+79      (J D G K F I A C E H B)    523     
+80      (J D K F I G E B H C A)    581     
+81      (J F D K G I A C E H B)    569     
+82      (G D J K F I A C E H B)    594     
+83      (J D K F I G A C E H B)    522     
+84      (J G D K I F A C E H B)    610     
+85      (J G D K F I A C E B H)    538     
+86      (J C G F K E A D I H B)    759     
+87      (J D G K F I A C H E B)    566     
+88      (J D E K F I A C G H B)    821     
+89      (J D G K F I A C E H B)    523     
+90      (J D G K F B A C E H I)    682     
+91      (J D K F I G A C E H B)    522     
+92      (J D F K G I A C E H B)    526     
+93      (J D G K F I E B H C A)    574     
+94      (D G J K F I A C E H B)    601     
+95      (J D G K F I A C E H B)    523     
+96      (J B F K G I A C E H D)    834     
+97      (J G D K F I A C E H B)    526     
+98      (G D J K F I A C E H B)    594     
+99      (J G E K F I A C D H B)    835     
+100     (J G D K F I A C E H B)    526     
+
+average fitness of population 25 = 633.5
+45      (J D G K F I A C E H B)    523     
+The best fit route: 
+Hialeah,Florida
+Cincinnati,Ohio
+Indianapolis,Indiana
+Rochester,New York
+Boston Massachusetts
+Milwaukee,Wisconsin
+Austin,Texas
+Dallas,Texas
+Lubbock,Texas
+Denver,Colorado
+Scottsdale,Arizona
+NIL
+[3]> (bye)
+
+Bye.

@@ -1,0 +1,64 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "tsp.l")
+
+;; Loading file tsp.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file tsp.l
+T
+[2]> (fitness *cities*)
+
+1054
+[3]> (fitness-demo)
+Trial 0
+x = (G F A D E K I C J B H)
+Fitness = 1102
+Trial 1
+x = (K E A H J G I D C F B)
+Fitness = 1052
+Trial 2
+x = (I C D F J B E H A K G)
+Fitness = 937
+Trial 3
+x = (I A C H J G F D E K B)
+Fitness = 1063
+Trial 4
+x = (D K A C I E G F J H B)
+Fitness = 925
+Trial 5
+x = (B D J F C A G E H I K)
+Fitness = 930
+Trial 6
+x = (J B D C K G H I E A F)
+Fitness = 1105
+Trial 7
+x = (K G J I C A F E D H B)
+Fitness = 1000
+Trial 8
+x = (E G J I A D H K B F C)
+Fitness = 1359
+Trial 9
+x = (G A F E D K J H I C B)
+Fitness = 1148
+NIL
+[4]> (bye)
+
+Bye.

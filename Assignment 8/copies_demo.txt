@@ -1,0 +1,333 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file rbg.l
+T
+[2]> (perform-copies-demo)
+
+
+
+Generation 1 population:
+
+
+
+the sample of individuals ...
+74    (R R R R G G B G R R G B R G R G B R B B B G G B B) 8     
+71    (R G B B R G R B R G R R G B G R R G R R G R G B B) 6     
+38    (B R G R G R B G G G B B G R G B B G G R B G B G R) 8     
+48    (R G R G R R B G B B B B B R R G R B G G B R G G G) 8     
+77    (G G G R G G G R B B R G R R B R B G B R G B B G B) 8     
+31    (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+77    (G G G R G G G R B B R G R R B R B G B R G B B G B) 8     
+70    (G R G B G B B G B G R R G G B G G G G G R G B B R) 7     
+
+the most fit of the sample ...
+31    (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+
+Selected individual = 
+31    (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+Possibly mutated individual = 
+31    (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+
+
+
+the sample of individuals ...
+92    (R R R G B G R B R R G R R G R R R B R B R R G G G) 4     
+80    (B G B G B B R G B B B G G B G R R R G B R G G B G) 10    
+38    (B R G R G R B G G G B B G R G B B G G R B G B G R) 8     
+55    (R R G B G R R G R R R R G B G G B B R B R G R R G) 5     
+73    (B B R B R B G B R B R B B R G B G R G R G B R B G) 11    
+30    (R B R B R G G G R G R R B B R B B R G R B B R G R) 8     
+80    (B G B G B B R G B B B G G B G R R R G B R G G B G) 10    
+90    (R R G R G R B G R R B G R B R B B R R R R B G G B) 7     
+
+the most fit of the sample ...
+73    (B B R B R B G B R B R B B R G B G R G R G B R B G) 11    
+
+Selected individual = 
+73    (B B R B R B G B R B R B B R G B G R G R G B R B G) 11    
+Possibly mutated individual = 
+73    (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+
+
+
+the sample of individuals ...
+44    (B B R G G B R G G B G B B B G G B R G B G G B B G) 11    
+69    (G R B R B R B G B G B R R B G R G R G B B B B G B) 11    
+80    (B G B G B B R G B B B G G B G R R R G B R G G B G) 10    
+66    (B R R R G B B B G R G G G B R G R B R B R B B R G) 9     
+44    (B B R G G B R G G B G B B B G G B R G B G G B B G) 11    
+66    (B R R R G B B B G R G G G B R G R B R B R B B R G) 9     
+21    (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+77    (G G G R G G G R B B R G R R B R B G B R G B B G B) 8     
+
+the most fit of the sample ...
+21    (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+
+Selected individual = 
+21    (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+Possibly mutated individual = 
+21    (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+3     (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+
+
+
+the sample of individuals ...
+1     (B G B B R B B G B B B R G G B R B G B B G B G R R) 13    
+43    (G G G R R R G R R R R G R R B R B B B B G B R B B) 8     
+60    (B B B B R R B G B G G R B R B R G B G G B G B R G) 11    
+83    (G B G R B R B B G R G B B R R B B G B R B G G R B) 11    
+16    (G B B B G G B G G G R R G G B B G B R R R B R R R) 8     
+8     (G G R B R R G G G B B R R R G B B B B R R G R B B) 9     
+79    (B R B R R G G R G B R R G B R B R B R G R B B R R) 8     
+91    (G B R R G B G G G R B G R G G B R R B R G G R R R) 5     
+
+the most fit of the sample ...
+1     (B G B B R B B G B B B R G G B R B G B B G B G R R) 13    
+
+Selected individual = 
+1     (B G B B R B B G B B B R G G B R B G B B G B G R R) 13    
+Possibly mutated individual = 
+1     (B G B B R B B G G B B R G G B R B G B B G B G R R) 12    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+3     (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+4     (B G B B R B B G G B B R G G B R B G B B G B G R R) 12    
+
+
+
+the sample of individuals ...
+18    (G B B G G G R G G B B G G R B B R B B B G R B R B) 11    
+67    (B R G G B G B R R G B G B R G R R R R R B G B G G) 7     
+97    (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+19    (B B R R R G G B G R B G B R R B B G G R G B G B B) 10    
+42    (B R G B B G R B B B B B B R G G B R B G G R R R R) 11    
+51    (R G B R B R B R R G R R R G R R R R B G G G B B G) 6     
+87    (R G B G R B R B R B G G B B G R R B R R G B G G R) 8     
+72    (R B G R R B B B B R R G R G R G B B G R R R B G B) 9     
+
+the most fit of the sample ...
+97    (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+
+Selected individual = 
+97    (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+Possibly mutated individual = 
+97    (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+3     (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+4     (B G B B R B B G G B B R G G B R B G B B G B G R R) 12    
+5     (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+
+
+
+the sample of individuals ...
+63    (G R R G R G G G R G G G B G B B G B R B G R G G G) 5     
+54    (G G R B R G B B R R R B R G B G G G G G R R B R B) 7     
+44    (B B R G G B R G G B G B B B G G B R G B G G B B G) 11    
+24    (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+37    (G R B B G G B G R G R G R G B R B G B B B R R R R) 8     
+74    (R R R R G G B G R R G B R G R G B R B B B G G B B) 8     
+99    (R B B R B B B R R R B R B G B R R B G G G B G R R) 10    
+46    (G R R G B R R G R R B R B R B G G B B B G R R R B) 8     
+
+the most fit of the sample ...
+24    (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+
+Selected individual = 
+24    (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+Possibly mutated individual = 
+24    (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+3     (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+4     (B G B B R B B G G B B R G G B R B G B B G B G R R) 12    
+5     (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+6     (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+
+
+
+the sample of individuals ...
+90    (R R G R G R B G R R B G R B R B B R R R R B G G B) 7     
+89    (G R B B R R R R B R B G G G R B R G B R G G B R G) 7     
+50    (B G B G B B G G B R B R R B G G G R G G G G R B R) 8     
+54    (G G R B R G B B R R R B R G B G G G G G R R B R B) 7     
+19    (B B R R R G G B G R B G B R R B B G G R G B G B B) 10    
+52    (G G R G B B G B B R G G R G R B R B G R G R G R R) 6     
+93    (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+2     (R B G G R R B B R R B G G R B B B B R B R B B B B) 13    
+
+the most fit of the sample ...
+2     (R B G G R R B B R R B G G R B B B B R B R B B B B) 13    
+
+Selected individual = 
+2     (R B G G R R B B R R B G G R B B B B R B R B B B B) 13    
+Possibly mutated individual = 
+2     (R B G B R R B B R R B G G R B B B B R B R B B B B) 14    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+3     (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+4     (B G B B R B B G G B B R G G B R B G B B G B G R R) 12    
+5     (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+6     (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+7     (R B G B R R B B R R B G G R B B B B R B R B B B B) 14    
+
+
+
+the sample of individuals ...
+80    (B G B G B B R G B B B G G B G R R R G B R G G B G) 10    
+63    (G R R G R G G G R G G G B G B B G B R B G R G G G) 5     
+94    (B R R B R G R R G R G G B B G R R R G B B G B B R) 8     
+77    (G G G R G G G R B B R G R R B R B G B R G B B G B) 8     
+93    (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+58    (R B R R R B R B B R R R B G G R G B G R R B R R G) 7     
+87    (R G B G R B R B R B G G B B G R R B R R G B G G R) 8     
+12    (G B R B R G R B B G B R B G G G B R R B B R R G R) 9     
+
+the most fit of the sample ...
+93    (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+
+Selected individual = 
+93    (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+Possibly mutated individual = 
+93    (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+3     (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+4     (B G B B R B B G G B B R G G B R B G B B G B G R R) 12    
+5     (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+6     (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+7     (R B G B R R B B R R B G G R B B B B R B R B B B B) 14    
+8     (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+
+
+
+the sample of individuals ...
+75    (G R R G G B B G B R B R B R R R R B R R G R B B G) 8     
+7     (B B B G R B G B G R G G B B G R R G G B G G G R R) 8     
+69    (G R B R B R B G B G B R R B G R G R G B B B B G B) 11    
+17    (B B G G G G G R B R B R R R R G R B G B R B R G R) 7     
+4     (R R B R B R B G B B G B R B B R G B G B B R B B R) 13    
+14    (G R R B R R B R G B R G B B G G R G B B R B B R G) 9     
+73    (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+44    (B B R G G B R G G B G B B B G G B R G B G G B B G) 11    
+
+the most fit of the sample ...
+4     (R R B R B R B G B B G B R B B R G B G B B R B B R) 13    
+
+Selected individual = 
+4     (R R B R B R B G B B G B R B B R G B G B B R B B R) 13    
+Possibly mutated individual = 
+4     (R R B R B R B G B B G B R B B R G G G B B R B B R) 12    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+3     (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+4     (B G B B R B B G G B B R G G B R B G B B G B G R R) 12    
+5     (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+6     (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+7     (R B G B R R B B R R B G G R B B B B R B R B B B B) 14    
+8     (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+9     (R R B R B R B G B B G B R B B R G G G B B R B B R) 12    
+
+
+
+the sample of individuals ...
+61    (G B R G R R R G G B B R B G R R R R R R B B G B B) 8     
+93    (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+80    (B G B G B B R G B B B G G B G R R R G B R G G B G) 10    
+31    (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+36    (G G B B G B G G G G R G R G R R G R G B B B B R R) 7     
+10    (B G B G R R R B R B G R B G R R R G B R G B R R G) 7     
+34    (B R R G B G G G B R G G R R G R G R R G B B R R G) 5     
+72    (R B G R R B B B B R R G R G R G B B G R R R B G B) 9     
+
+the most fit of the sample ...
+93    (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+
+Selected individual = 
+93    (G B R R B G R B G G B G R R R B B B R G B B R B B) 11    
+Possibly mutated individual = 
+93    (G B R B B G R B G G B G R R R B B B R G B B R B B) 12    
+
+
+
+Generation 1 population:
+1     (G R G R R B G G B B B R B R G R B R B B G G R B B) 10    
+2     (B B R B R B G B R B R B B R G B G G G R G B R B G) 11    
+3     (B B B R B B R R B G B B B G B B B B G G B G B G B) 16    
+4     (B G B B R B B G G B B R G G B R B G B B G B G R R) 12    
+5     (G R B B G G G G B R B R G B G B B B B G B G G B B) 12    
+6     (B B B R R B R R R G R R B B B G B B B B B R G R R) 12    
+7     (R B G B R R B B R R B G G R B B B B R B R B B B B) 14    
+8     (G B R B B G R B G G B G R R R B B B R G B B R B B) 11    
+9     (R R B R B R B G B B G B R B B R G G G B B R B B R) 12    
+10    (G B R B B G R B G G B G R R R B B B R G B B R B B) 12    
+
+
+
+NIL
+[3]> (bye)
+
+Bye.

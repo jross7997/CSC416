@@ -1,0 +1,103 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file rbg.l
+T
+[2]> (mutation-demo)
+Trial 0
+s = (R B B G R R R B R G G R B R R B R B R B B B B R R)
+m = (R B B G R R R B G G G R B R R B R B R B B B B R R)
+Trial 1
+s = (R B B G R R R B G G G R B R R B R B R B B B B R R)
+m = (R B B G R R R B G G G R B R B B R B R B B B B R R)
+Trial 2
+s = (R B B G R R R B G G G R B R B B R B R B B B B R R)
+m = (R B B G R R R B G G G R B R B B R B R B B B B R B)
+Trial 3
+s = (R B B G R R R B G G G R B R B B R B R B B B B R B)
+m = (R B B G R R R B G R G R B R B B R B R B B B B R B)
+Trial 4
+s = (R B B G R R R B G R G R B R B B R B R B B B B R B)
+m = (R B B G R R R B G R G R B R B B R B R B B R B R B)
+Trial 5
+s = (R B B G R R R B G R G R B R B B R B R B B R B R B)
+m = (R B B G R R R B G R G R G R B B R B R B B R B R B)
+Trial 6
+s = (R B B G R R R B G R G R G R B B R B R B B R B R B)
+m = (R B B G R R R B G R B R G R B B R B R B B R B R B)
+Trial 7
+s = (R B B G R R R B G R B R G R B B R B R B B R B R B)
+m = (R B B G R R R B G R G R G R B B R B R B B R B R B)
+Trial 8
+s = (R B B G R R R B G R G R G R B B R B R B B R B R B)
+m = (R B B G R R R B G R G G G R B B R B R B B R B R B)
+Trial 9
+s = (R B B G R R R B G R G G G R B B R B R B B R B R B)
+m = (R B B G R R R B B R G G G R B B R B R B B R B R B)
+NIL
+[3]> (crossover-demo)
+Trial 0
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G G B R B G B B G B G R R R B G G R R R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 1
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G G B R B G B B G B G R R R B G G R B R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 2
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G G B R B G B B G B G R R R B G G R R R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 3
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G R B B B B R B R B B B B B R B R G B R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 4
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G G B R B G B B G B G R B B R B R G B R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 5
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B G G R B B B B R B R B B B B B R B R G B R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 6
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G G B R B B R B R B B B B B R B R G B R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 7
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G R B B B B R B R B B B B B R B R G B R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 8
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G G B R B G B B R B B B B B R B R G B R G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+Trial 9
+m = (B B B R G G B R B G B B G B G R R R B G G R R B B)
+x = (B B B R G G B R B G B B G B G R R R B G G R R B G)
+f = (R R B G G R B B B B R B R B B B B B R B R G B R G)
+NIL
+[4]> (bye)
+
+Bye.

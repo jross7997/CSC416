@@ -1,0 +1,364 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "tsp.l")
+
+;; Loading file tsp.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file tsp.l
+T
+[2]> (perform-copies-demo)
+
+
+
+Generation1 population ...
+
+
+
+
+the sample of individuals ...
+97      (I B K C E A F G D H J)    1064    
+18      (E J H D G K F I B A C)    849     
+59      (K C D G A I F B J H E)    1143    
+73      (C F K E I G J B H D A)    1024    
+38      (I G C B D A E F J K H)    1043    
+63      (D I E J C G K H F B A)    1143    
+62      (D F I H J A K E G B C)    1156    
+29      (B G J H D K A F E C I)    1176    
+
+the most fit of the sample ...
+18      (E J H D G K F I B A C)    849     
+
+Selected individual = 
+18      (E J H D G K F I B A C)    849     
+Possibly muted individual = 
+18      (E J H D G K F I B A C)    849     
+Renumbered individual = 
+1       (E J H D G K F I B A C)    849     
+
+
+
+Generation1 population ...
+
+1       (E J H D G K F I B A C)    849     
+
+
+
+the sample of individuals ...
+96      (B C I H F G J K E A D)    1023    
+22      (I H B F C G D K E A J)    956     
+75      (C E F I J H G K A B D)    1118    
+28      (J F E D K H G B A I C)    1121    
+32      (B K G H I D F A C J E)    981     
+49      (C D B A J H K E F I G)    1183    
+34      (B J A I G C K D H F E)    1147    
+64      (B I G E D F C A K J H)    1052    
+
+the most fit of the sample ...
+22      (I H B F C G D K E A J)    956     
+
+Selected individual = 
+22      (I H B F C G D K E A J)    956     
+Possibly muted individual = 
+22      (I H B F C G D K E A J)    956     
+Renumbered individual = 
+2       (I H B F C G D K E A J)    956     
+
+
+
+Generation1 population ...
+
+1       (E J H D G K F I B A C)    849     
+2       (I H B F C G D K E A J)    956     
+
+
+
+the sample of individuals ...
+54      (J B C E I F A H D K G)    945     
+68      (F G E I D C J B A H K)    1003    
+68      (F G E I D C J B A H K)    1003    
+95      (E H I K D J A C G F B)    844     
+27      (C I F B H E J K G A D)    1006    
+12      (D I F E H G B A C K J)    940     
+7       (G J H K B D C F I E A)    1224    
+7       (G J H K B D C F I E A)    1224    
+
+the most fit of the sample ...
+95      (E H I K D J A C G F B)    844     
+
+Selected individual = 
+95      (E H I K D J A C G F B)    844     
+Possibly muted individual = 
+95      (B H I K D J A C G F E)    804     
+Renumbered individual = 
+3       (B H I K D J A C G F E)    804     
+
+
+
+Generation1 population ...
+
+1       (E J H D G K F I B A C)    849     
+2       (I H B F C G D K E A J)    956     
+3       (B H I K D J A C G F E)    804     
+
+
+
+the sample of individuals ...
+53      (B H D K J A E F I C G)    902     
+13      (J G I H F E C A K B D)    1107    
+82      (A F D C G K I B H J E)    1018    
+66      (G F H E B K J C A D I)    936     
+64      (B I G E D F C A K J H)    1052    
+91      (K C H E J D G A B I F)    892     
+38      (I G C B D A E F J K H)    1043    
+78      (K F I D A E C H J G B)    794     
+
+the most fit of the sample ...
+78      (K F I D A E C H J G B)    794     
+
+Selected individual = 
+78      (K F I D A E C H J G B)    794     
+Possibly muted individual = 
+78      (K F I D A E C H J G B)    794     
+Renumbered individual = 
+4       (K F I D A E C H J G B)    794     
+
+
+
+Generation1 population ...
+
+1       (E J H D G K F I B A C)    849     
+2       (I H B F C G D K E A J)    956     
+3       (B H I K D J A C G F E)    804     
+4       (K F I D A E C H J G B)    794     
+
+
+
+the sample of individuals ...
+65      (E K G I D F J H C B A)    865     
+59      (K C D G A I F B J H E)    1143    
+80      (C D E I J H A F G K B)    1156    
+12      (D I F E H G B A C K J)    940     
+57      (I K C D F J B E G H A)    988     
+80      (C D E I J H A F G K B)    1156    
+16      (B H J E K F A G C D I)    1003    
+89      (D H K F G C J A B I E)    994     
+
+the most fit of the sample ...
+65      (E K G I D F J H C B A)    865     
+
+Selected individual = 
+65      (E K G I D F J H C B A)    865     
+Possibly muted individual = 
+65      (E K G I D F J H C B A)    865     
+Renumbered individual = 
+5       (E K G I D F J H C B A)    865     
+
+
+
+Generation1 population ...
+
+1       (E J H D G K F I B A C)    849     
+2       (I H B F C G D K E A J)    956     
+3       (B H I K D J A C G F E)    804     
+4       (K F I D A E C H J G B)    794     
+5       (E K G I D F J H C B A)    865     
+
+
+
+the sample of individuals ...
+1       (E J H D G K F I B A C)    849     
+5       (G B F E K H J I A D C)    1426    
+43      (C B I D F E H K G J A)    968     
+45      (F I H G A K B D E J C)    1218    
+14      (H C K G J I F D E B A)    877     
+7       (G J H K B D C F I E A)    1224    
+16      (B H J E K F A G C D I)    1003    
+76      (F H K I G A E D C J B)    1014    
+
+the most fit of the sample ...
+1       (E J H D G K F I B A C)    849     
+
+Selected individual = 
+1       (E J H D G K F I B A C)    849     
+Possibly muted individual = 
+1       (E J H G D K F I B A C)    836     
+Renumbered individual = 
+6       (E J H G D K F I B A C)    836     
+
+
+
+Generation1 population ...
+
+1       (E J H G D K F I B A C)    849     
+2       (I H B F C G D K E A J)    956     
+3       (B H I K D J A C G F E)    804     
+4       (K F I D A E C H J G B)    794     
+5       (E K G I D F J H C B A)    865     
+6       (E J H G D K F I B A C)    836     
+
+
+
+the sample of individuals ...
+29      (B G J H D K A F E C I)    1176    
+71      (G F D B C A K H I E J)    1033    
+62      (D F I H J A K E G B C)    1156    
+11      (C K A I B G F D J E H)    1101    
+49      (C D B A J H K E F I G)    1183    
+4       (K F I D A E C H J G B)    794     
+81      (K F C J I G H D E B A)    906     
+4       (D H A B K I C J F G E)    1019    
+
+the most fit of the sample ...
+4       (K F I D A E C H J G B)    794     
+
+Selected individual = 
+4       (K F I D A E C H J G B)    794     
+Possibly muted individual = 
+4       (K F I A D E C H J G B)    937     
+Renumbered individual = 
+7       (K F I A D E C H J G B)    937     
+
+
+
+Generation1 population ...
+
+1       (E J H G D K F I B A C)    849     
+2       (I H B F C G D K E A J)    956     
+3       (B H I K D J A C G F E)    804     
+4       (K F I A D E C H J G B)    794     
+5       (E K G I D F J H C B A)    865     
+6       (E J H G D K F I B A C)    836     
+7       (K F I A D E C H J G B)    937     
+
+
+
+the sample of individuals ...
+73      (C F K E I G J B H D A)    1024    
+1       (E J H G D K F I B A C)    849     
+24      (F I H D E J K A G C B)    1049    
+51      (G F A K E I B H J C D)    1205    
+5       (G B F E K H J I A D C)    1426    
+22      (I H B F C G D K E A J)    956     
+43      (C B I D F E H K G J A)    968     
+79      (C B A E I J K G F H D)    970     
+
+the most fit of the sample ...
+1       (E J H G D K F I B A C)    849     
+
+Selected individual = 
+1       (E J H G D K F I B A C)    849     
+Possibly muted individual = 
+1       (E J H G D C F I B A K)    1116    
+Renumbered individual = 
+8       (E J H G D C F I B A K)    1116    
+
+
+
+Generation1 population ...
+
+1       (E J H G D C F I B A K)    849     
+2       (I H B F C G D K E A J)    956     
+3       (B H I K D J A C G F E)    804     
+4       (K F I A D E C H J G B)    794     
+5       (E K G I D F J H C B A)    865     
+6       (E J H G D C F I B A K)    836     
+7       (K F I A D E C H J G B)    937     
+8       (E J H G D C F I B A K)    1116    
+
+
+
+the sample of individuals ...
+98      (H G A E F C K D J I B)    1096    
+26      (H C I E A F G K J D B)    958     
+68      (F G E I D C J B A H K)    1003    
+98      (H G A E F C K D J I B)    1096    
+4       (K F I A D E C H J G B)    794     
+20      (A H K B I C E J D F G)    1059    
+79      (C B A E I J K G F H D)    970     
+31      (C F A J I H D G E B K)    1123    
+
+the most fit of the sample ...
+4       (K F I A D E C H J G B)    794     
+
+Selected individual = 
+4       (K F I A D E C H J G B)    794     
+Possibly muted individual = 
+4       (K H I A D E C F J G B)    1095    
+Renumbered individual = 
+9       (K H I A D E C F J G B)    1095    
+
+
+
+Generation1 population ...
+
+1       (E J H G D C F I B A K)    849     
+2       (I H B F C G D K E A J)    956     
+3       (B H I K D J A C G F E)    804     
+4       (K H I A D E C F J G B)    794     
+5       (E K G I D F J H C B A)    865     
+6       (E J H G D C F I B A K)    836     
+7       (K H I A D E C F J G B)    937     
+8       (E J H G D C F I B A K)    1116    
+9       (K H I A D E C F J G B)    1095    
+
+
+
+the sample of individuals ...
+72      (E G I H A K D C B F J)    1001    
+1       (H K J C A B G F E I D)    1016    
+26      (H C I E A F G K J D B)    958     
+54      (J B C E I F A H D K G)    945     
+99      (G I J C F E D B A K H)    1224    
+98      (H G A E F C K D J I B)    1096    
+88      (J I B C A H K G E D F)    922     
+15      (J K I A B F C D G H E)    984     
+
+the most fit of the sample ...
+88      (J I B C A H K G E D F)    922     
+
+Selected individual = 
+88      (J I B C A H K G E D F)    922     
+Possibly muted individual = 
+88      (J F B C A H K G E D I)    964     
+Renumbered individual = 
+10      (J F B C A H K G E D I)    964     
+
+
+
+Generation1 population ...
+
+1       (E J H G D C F I B A K)    849     
+2       (I H B F C G D K E A J)    956     
+3       (B H I K D J A C G F E)    804     
+4       (K H I A D E C F J G B)    794     
+5       (E K G I D F J H C B A)    865     
+6       (E J H G D C F I B A K)    836     
+7       (K H I A D E C F J G B)    937     
+8       (E J H G D C F I B A K)    1116    
+9       (K H I A D E C F J G B)    1095    
+10      (J F B C A H K G E D I)    964     
+
+
+
+NIL
+[3]> (bye)
+
+Bye.

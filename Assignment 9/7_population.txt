@@ -1,0 +1,305 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "tsp.l")
+
+;; Loading file tsp.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file tsp.l
+T
+[2]> (setf p (initial-population))
+
+#<POPULATION #x1AA50E29>
+[3]> (display p)
+
+
+Generation0 population ...
+
+1       (D K G H E B F J I A C)    903     
+2       (K H I D F E J A B G C)    1079    
+3       (E H I A C D K J F B G)    1011    
+4       (C K J I B E F G A D H)    1133    
+5       (A K F J E B G I H C D)    911     
+6       (G E D K A I B H F J C)    1109    
+7       (G J I H D C K A E B F)    1097    
+8       (H J B K I D C E F G A)    1103    
+9       (B I G H F D C K E J A)    1125    
+10      (A K H F J B D C G E I)    1296    
+11      (I K J F G A E H C B D)    862     
+12      (J C B H G K I D F E A)    774     
+13      (I K D G A B F H J E C)    1028    
+14      (F E I K G A H D C J B)    1046    
+15      (B J H F K G D C I E A)    940     
+16      (B G F E D K H A J C I)    1083    
+17      (E D B A H J F G C I K)    1016    
+18      (H C G A F I B K E J D)    1213    
+19      (I H K A F E C G B D J)    1223    
+20      (D G E B A I F K H C J)    793     
+21      (A K E I F C H B D J G)    1107    
+22      (F J D B I K C H G A E)    993     
+23      (G J A F D I E H B K C)    1015    
+24      (J F G E H D I A K C B)    950     
+25      (J G B D K C F A E I H)    1129    
+26      (A K G B E C D I F J H)    918     
+27      (F D G E J A I C B K H)    1049    
+28      (K B E D I H A F C J G)    1095    
+29      (D A B K H C J F G I E)    1029    
+30      (H E C K I D A J F G B)    843     
+31      (E H F C D K I J G B A)    1020    
+32      (H I J B E K A F C G D)    1172    
+33      (B F I H J D G E C K A)    1070    
+34      (A E D H I F G C B J K)    984     
+35      (K I G H C F D E B J A)    941     
+36      (H C J E I G F A B K D)    1018    
+37      (I J G C A D B H K F E)    989     
+38      (C G I J E K D B A F H)    1149    
+39      (E K C D G A H F B J I)    1263    
+40      (B K D I J A H F G C E)    944     
+41      (I K H B G D A E C J F)    802     
+42      (H E F J C A D B I K G)    979     
+43      (J F G B K C E A I D H)    978     
+44      (E J G C B D F H I K A)    1099    
+45      (D E A G B C K J I F H)    1102    
+46      (J A B E C D G F K H I)    717     
+47      (H A C B D G F I E K J)    883     
+48      (D F E K A H J C G I B)    1144    
+49      (D J I C K F A H G E B)    969     
+50      (F C E G H J D A B I K)    1023    
+51      (E A F K C I G H J B D)    1099    
+52      (H G J I F A E K B D C)    1197    
+53      (H I K G D J C A F B E)    883     
+54      (K G C D I H A E B J F)    821     
+55      (B H F K C J E D A I G)    975     
+56      (G F H A I K B J D E C)    1105    
+57      (E B I F G C A K J H D)    1006    
+58      (J B C A I G D H F E K)    1051    
+59      (H I J K A F B E D G C)    1127    
+60      (B I J D E A F C K G H)    1104    
+61      (J I D E K F B H A C G)    901     
+62      (H B F C K A E I D G J)    987     
+63      (D K F H G E A J B C I)    969     
+64      (B E G J A K H F C I D)    1103    
+65      (J K B D E C H I A G F)    1035    
+66      (J C D H F G I E K B A)    1110    
+67      (I B J G E F C A K D H)    1188    
+68      (G K B J C E F D A H I)    1093    
+69      (A J B F C K I D E G H)    1203    
+70      (C E F J I B D H A K G)    1132    
+71      (K G J D I A H F B C E)    977     
+72      (D K I H C G J A B E F)    865     
+73      (C E A B H J F I G K D)    703     
+74      (B I F K E H J D A G C)    991     
+75      (I C F H D J E K G B A)    1194    
+76      (B A J C H E D K I F G)    786     
+77      (H G F C B I K J E A D)    1012    
+78      (D K H E F A I B C J G)    1131    
+79      (I G D F K J H B E A C)    602     
+80      (A I H B G F J K C E D)    982     
+81      (H A C G E J B D K F I)    927     
+82      (B F A I H E K D C G J)    1092    
+83      (I H J A K C D B F G E)    1286    
+84      (A J K E C I H F D G B)    989     
+85      (G H A E F D J I B K C)    1149    
+86      (F C I H D A B E K J G)    1053    
+87      (I J B K F C G D E A H)    1008    
+88      (F J D H K E B C I G A)    969     
+89      (J B D H A C K I E G F)    1013    
+90      (I C D A K G F H B E J)    970     
+91      (F C A J G E D K H I B)    1012    
+92      (G D C E I A B F H J K)    1103    
+93      (K H B E J C A F I D G)    824     
+94      (C H K E F I A J G B D)    1241    
+95      (B H F K D J E A I G C)    787     
+96      (I E H D C J F K G B A)    891     
+97      (C B A G D K E J I F H)    998     
+98      (D K C G J B H I E A F)    999     
+99      (D I F B E H J C K G A)    1001    
+100     (J F G B I C E A H D K)    874     
+
+NIL
+[4]> (average p)
+
+1016.37
+[5]> (select-individual p)
+
+#<INDIVIDUAL #x1A9F3DAD>
+[6]> (display (select-individual p))
+73      (C E A B H J F I G K D)    703     
+NIL
+[7]> (population-demo)
+
+
+Generation0 population ...
+
+1       (C F E B J K H A D G I)    1060    
+2       (F H J C A I K E D B G)    1190    
+3       (H J D K E I G F B C A)    999     
+4       (H K F B G I E A D J C)    1015    
+5       (F I K D C J H B G E A)    883     
+6       (B E A J D F C G I H K)    860     
+7       (F J E H I D C B K A G)    1035    
+8       (H E D G B F K A I C J)    1014    
+9       (K E D G I F H B A C J)    819     
+10      (J E D I A G K H B C F)    967     
+11      (D B A K G J E I F H C)    1105    
+12      (F D E C H K G A I J B)    980     
+13      (B A F D H I C J G K E)    1025    
+14      (H J G D I F A B K C E)    1002    
+15      (H B C I D F J E A K G)    829     
+16      (A J I C G D F B E H K)    959     
+17      (B H G F I A D K E J C)    968     
+18      (B K D I G A E J C H F)    917     
+19      (I B C D E J K H G A F)    1185    
+20      (K H A B G D C F I J E)    1052    
+21      (K E A G H B D I J F C)    1027    
+22      (I J F H E G A D B C K)    1134    
+23      (K I G B E J A H F C D)    1024    
+24      (J B C A G K F E I D H)    898     
+25      (A C H F I B K J D E G)    1104    
+26      (H F A B I K G C J E D)    1110    
+27      (F H G A J D B C I K E)    1106    
+28      (E C D H B K J I A F G)    1068    
+29      (A F B K G I D J C E H)    975     
+30      (H F G B D C E I A J K)    1103    
+31      (F E C A B H I D J K G)    751     
+32      (C D I H B E A K F J G)    757     
+33      (A E D B C J F G K I H)    891     
+34      (J E I A G H F B K C D)    1346    
+35      (G H A K B F D J C E I)    1146    
+36      (C E K B I D F J G A H)    1015    
+37      (I D H B K G F J A E C)    818     
+38      (B I H F K A D G E J C)    1044    
+39      (G D J H E F A B K I C)    1090    
+40      (H G E B F J C I A D K)    1054    
+41      (E F C K J I D B H A G)    1122    
+42      (G I H F A C B D J K E)    1088    
+43      (G C D B I J K F H E A)    996     
+44      (C H D K I F A J B E G)    991     
+45      (D K F B E G I C J A H)    872     
+46      (A F B K I D J C H E G)    1093    
+47      (D E K G F A J B C H I)    1104    
+48      (E K I G H A J F C B D)    1037    
+49      (I D E G B A J H C K F)    977     
+50      (H E K I B D F C J G A)    1081    
+51      (H G J E D K B C I F A)    1117    
+52      (G H E I J F D K B C A)    920     
+53      (I F D G E H K C B A J)    866     
+54      (H G D I F C J A B K E)    1032    
+55      (A K G F J I C E B H D)    858     
+56      (I A H G J K E F B C D)    1226    
+57      (A E B D C I K G J H F)    968     
+58      (D C E F A J B I G K H)    1121    
+59      (D A B I K E J C G F H)    1111    
+60      (F H G C I B K E J A D)    1276    
+61      (J C I H G B A F E D K)    1119    
+62      (E F C J H D K A I G B)    1188    
+63      (G J C D F K H I E B A)    879     
+64      (F J H E G C A D B I K)    987     
+65      (F D G B J H A E I C K)    1024    
+66      (E G K D H B F A J I C)    1082    
+67      (F B G K I A C H D E J)    1021    
+68      (G F E B I D K A J C H)    967     
+69      (A D C H G F K E I B J)    1048    
+70      (G C E B A K H D I F J)    880     
+71      (H A K D B C F G E I J)    1068    
+72      (J G K E D B C A I F H)    1032    
+73      (F B J G E A D H C I K)    1069    
+74      (D F K I B J G E H A C)    842     
+75      (K H C A J G E I B F D)    1085    
+76      (A G I H J E F B K C D)    1329    
+77      (K B I E H A D C F J G)    1126    
+78      (D K B J I F C E H G A)    1067    
+79      (F K I B J G H E A C D)    808     
+80      (G D E F B C A J I H K)    1097    
+81      (I E H G J A C B F D K)    914     
+82      (E I B J D C A H K F G)    970     
+83      (D B E A G H J C I K F)    895     
+84      (J F H I E G D A B K C)    1107    
+85      (G I H C D K E A J B F)    1025    
+86      (E J C I A G D K F B H)    910     
+87      (F C K G A I B D J H E)    1143    
+88      (B E I H D C A K J F G)    926     
+89      (E B H C K J I G D F A)    833     
+90      (K D B F I J H E G A C)    1069    
+91      (J F K D G A C H B E I)    609     
+92      (K B G J D A I H F C E)    1190    
+93      (J I A B E H G K F C D)    840     
+94      (F C H G I E B D J A K)    1008    
+95      (J H I E K D B G F C A)    1115    
+96      (I A E J D F K B C H G)    930     
+97      (A F G J D H B I C K E)    1118    
+98      (J B K H G E F A C D I)    1211    
+99      (D A F C E B I J G H K)    1120    
+100     (B F D C G I H K E J A)    1116    
+
+Average Fitness 1019.48
+
+Sampling... 
+
+the sample of individuals ...
+24      (J B C A G K F E I D H)    898     
+42      (G I H F A C B D J K E)    1088    
+42      (G I H F A C B D J K E)    1088    
+5       (F I K D C J H B G E A)    883     
+73      (F B J G E A D H C I K)    1069    
+80      (G D E F B C A J I H K)    1097    
+52      (G H E I J F D K B C A)    920     
+22      (I J F H E G A D B C K)    1134    
+
+the most fit of the sample ...
+5       (F I K D C J H B G E A)    883     
+
+
+Sampling...
+
+the sample of individuals ...
+48      (E K I G H A J F C B D)    1037    
+48      (E K I G H A J F C B D)    1037    
+64      (F J H E G C A D B I K)    987     
+2       (F H J C A I K E D B G)    1190    
+9       (K E D G I F H B A C J)    819     
+34      (J E I A G H F B K C D)    1346    
+47      (D E K G F A J B C H I)    1104    
+46      (A F B K I D J C H E G)    1093    
+
+the most fit of the sample ...
+9       (K E D G I F H B A C J)    819     
+
+
+Sampling...
+
+the sample of individuals ...
+30      (H F G B D C E I A J K)    1103    
+43      (G C D B I J K F H E A)    996     
+78      (D K B J I F C E H G A)    1067    
+46      (A F B K I D J C H E G)    1093    
+34      (J E I A G H F B K C D)    1346    
+45      (D K F B E G I C J A H)    872     
+28      (E C D H B K J I A F G)    1068    
+2       (F H J C A I K E D B G)    1190    
+
+the most fit of the sample ...
+45      (D K F B E G I C J A H)    872     
+
+
+NIL
+[8]> (bye)
+
+Bye.

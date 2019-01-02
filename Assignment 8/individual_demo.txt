@@ -1,0 +1,70 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file rbg.l
+T
+[2]> (setf rbg (rbg-string))
+
+(B G G B R R R B R R G R R G B B B R B G R R B G R)
+[3]> (setf *fitness* #'fitness-b)
+
+#<STANDARD-GENERIC-FUNCTION FITNESS-B>
+[4]> (setf rbg-i (new-individual 1 rbg))
+
+#<INDIVIDUAL #x1A3E44FD>
+[5]> (individual-number rbg-i)
+
+1
+[6]> (individual-rbg-string rbg-i)
+
+(B G G B R R R B R R G R R G B B B R B G R R B G R)
+[7]> (funcall *fitness* rbg)
+
+8
+[8]> (display rbg-i)
+1     (B G G B R R R B R R G R R G B B B R B G R R B G R) 8     
+NIL
+[9]> (setf r (random-individual))
+
+#<INDIVIDUAL #x1A3BC915>
+[10]> (display r)
+0     (B B B G G B B R R R G B R R B B B B G B R R G G G) 11    
+NIL
+[11]> (setf r (random-individual))
+
+#<INDIVIDUAL #x1A3C1271>
+[12]> (display r)
+0     (B R R R G B R G B B G G R G G G G R G G B G R R B) 6     
+NIL
+[13]> (individual-demo)
+0     (B B B B G B G G R B B R R G G B R B G R G B R G R) 7     
+1     (B G G B B B R R R G B G R G G R R B B R B G R G B) 8     
+2     (G G B R G R B B G R G B B R G G B B B B B G B R R) 6     
+3     (G B G G B B G G G R B B B G G R B G R B B B B G G) 3     
+Fitness of i0 = 7
+Fitness of i1 = 8
+Fitness of i2 = 6
+Fitness of i3 = 3
+NIL
+[14]> 

@@ -1,0 +1,108 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file rbg.l
+T
+[2]> (setf i (random-individual))
+
+#<INDIVIDUAL #x1AAA5FE9>
+[3]> (display i)
+0     (G R B R B G B B R B B G B B B R G G B R B G B B G) 13    
+NIL
+[4]> (display (mutate i))
+0     (G R B R B G B B R R B G B B B R G G B R B G B B G) 12    
+NIL
+[5]> (display i)
+0     (G R B R B G B B R R B G B B B R G G B R B G B B G) 13    
+NIL
+[6]> (display (mutate i))
+0     (G R B R B G B B R R B G B B B R G G B R B B B B G) 13    
+NIL
+[7]> (display i)
+0     (G R B R B G B B R R B G B B B R G G B R B B B B G) 13    
+NIL
+[8]> (display (maybe-mutate i))
+0     (G R B R G G B B R R B G B B B R G G B R B B B B G) 12    
+NIL
+[9]> (display i)
+0     (G R B R G G B B R R B G B B B R G G B R B B B B G) 13    
+NIL
+[10]> (display (maybe-mutate i))
+0     (G R B R G G B B R R B G B B B G G G B R B B B B G) 12    
+NIL
+[11]> (display i)
+0     (G R B R G G B B R R B G B B B G G G B R B B B B G) 13    
+NIL
+[12]> (display (maybe-mutate i))
+0     (G R B R G G B B R R B G B B B G G G B R B B B B G) 13    
+NIL
+[13]> (mutate-demo)
+0     (B R R B G G R B B B B R B R B B B B B R B R G B R) 14    
+0     (B R R B G G R B B B B R B R B B G B B R B R G B R) 13    
+0     (B R R B G G R B B B B R B R B B G B B R B G G B R) 13    
+0     (B R R B R G R B B B B R B R B B G B B R B G G B R) 13    
+0     (B G R B R G R B B B B R B R B B G B B R B G G B R) 13    
+0     (B G R B G G R B B B B R B R B B G B B R B G G B R) 13    
+0     (B G R B G G R B B B B R B R B B G B B R B G G G R) 12    
+0     (B G R B G G R B B B G R B R B B G B B R B G G G R) 11    
+0     (B G R B G G R G B B G R B R B B G B B R B G G G R) 10    
+0     (B G R B G G R B B B G R B R B B G B B R B G G G R) 11    
+0     (B G R B G G R B B B G R B R B B G B B R B B G G R) 12    
+0     (B G R B G G R B B B G R B R B B G B B R R B G G R) 11    
+0     (B G R B G G R B R B G R B R B B G B B R R B G G R) 10    
+0     (B G R B G G B B R B G R B R B B G B B R R B G G R) 11    
+0     (B G R R G G B B R B G R B R B B G B B R R B G G R) 10    
+0     (B G R R G G B B R G G R B R B B G B B R R B G G R) 9     
+0     (B G R R G G B B G G G R B R B B G B B R R B G G R) 9     
+0     (B G R R G G B B G G G R B B B B G B B R R B G G R) 10    
+0     (B G R R G G B B G G G R B B B B G B B R R R G G R) 9     
+0     (B G R R G G B B G G G R B B G B G B B R R R G G R) 8     
+0     (B G R R G G B B G G G R B B G B G B G R R R G G R) 7     
+NIL
+[14]> (maybe-mutate-demo)
+0     (B B R R B B B G R R G B B B G R R G R G G G R G B) 9     
+0     (B B R R B B B G R R G B B G G R R G R G G G R G B) 8      *
+0     (B B G R B B B G R R G B B G G R R G R G G G R G B) 8      *
+0     (B B G R B B B G R R G B B G G R R G R G G G R G B) 8     
+0     (B B G R B B B G R R G B B G G R R G R G G G R G B) 8     
+0     (B B G R B B B G R R G B B G G R B G R G G G R G B) 9      *
+0     (B B G R B B B G R R G B B G G R B G R G G G R G B) 9     
+0     (B B G R B B B G R R G B B G G R B G R G G G R G B) 9     
+0     (R B G R B B B G R R G B B G G R B G R G G G R G B) 8      *
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7      *
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+0     (R B G R B B B G R R G B G G G R B G R G G G R G B) 7     
+NIL
+[15]> (bye)
+
+Bye.

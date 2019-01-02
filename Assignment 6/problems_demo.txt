@@ -1,0 +1,111 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "problems.l")
+
+;; Loading file problems.l ...
+;;  Loading file dice.l ...
+;;   Loading file lp.l ...
+;;   Loaded file lp.l
+;;  Loaded file dice.l
+;;  Loading file accumulator.l ...
+;;  Loaded file accumulator.l
+;; Loaded file problems.l
+T
+[2]> (problems_demo 100)
+1. How many times would you expect to have to throw two standard dice until a pair shows up?
+
+5.61 
+2. How many times would you expect to have to throw a 3 sided die and a 12 sided die until a pair shows up?
+
+12.67 
+3. How many times would you expect to have to throw two standard dice to get a top face total of 7
+
+6.53 
+4. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get a top face of 7
+
+15.88 
+5. How many times would you expect to have to throw two standard dice to get a top face total of 11?
+
+18.49 
+6. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get a top face total of 11?
+
+11.78 
+7. How many time would you expect to have to throw two standard dice to get 7,11, or doubles?
+
+2.22 
+8. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get 7,11, ir doubles?
+
+4.17 
+NIL
+[3]> (problems_demo 1000)
+1. How many times would you expect to have to throw two standard dice until a pair shows up?
+
+6.11 
+2. How many times would you expect to have to throw a 3 sided die and a 12 sided die until a pair shows up?
+
+11.965 
+3. How many times would you expect to have to throw two standard dice to get a top face total of 7
+
+6.078 
+4. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get a top face of 7
+
+11.802 
+5. How many times would you expect to have to throw two standard dice to get a top face total of 11?
+
+17.757 
+6. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get a top face total of 11?
+
+11.923 
+7. How many time would you expect to have to throw two standard dice to get 7,11, or doubles?
+
+2.518 
+8. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get 7,11, ir doubles?
+
+3.978 
+NIL
+[4]> (problems_demo 10000)
+1. How many times would you expect to have to throw two standard dice until a pair shows up?
+
+5.9533 
+2. How many times would you expect to have to throw a 3 sided die and a 12 sided die until a pair shows up?
+
+11.9319 
+3. How many times would you expect to have to throw two standard dice to get a top face total of 7
+
+6.0834 
+4. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get a top face of 7
+
+12.0452 
+5. How many times would you expect to have to throw two standard dice to get a top face total of 11?
+
+17.9943 
+6. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get a top face total of 11?
+
+11.7844 
+7. How many time would you expect to have to throw two standard dice to get 7,11, or doubles?
+
+2.534 
+8. How many times would you expect to have to throw a 3 sided die and a 12 sided die to get 7,11, ir doubles?
+
+3.9599 
+NIL
+[5]> (bye)
+
+Bye.

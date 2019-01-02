@@ -1,0 +1,122 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+*** - FIND-CLASS: INTGER does not name a class
+The following restarts are available:
+SKIP           :R1      skip (DEFMETHOD CHANGE # ...)
+RETRY          :R2      retry (DEFMETHOD CHANGE # ...)
+STOP           :R3      stop loading file C:\Users\Justin\Desktop\CSC416\rbg.l
+ABORT          :R4      Abort main loop
+Break 1 [2]> (bye)
+
+Bye.
+c:/Users/Justin/Desktop/CSC416 $ clisp
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file rbg.l
+T
+[2]> (setf s (rbg-string))
+
+(R B G B B R R G G B R G G G R R G B B R B R B G G)
+[3]> s
+
+(R B G B B R R G G B R G G G R R G B B R B R B G G)
+[4]> (setf s (mutation s))
+
+R
+[5]> s
+
+R
+[6]> (bye)
+
+Bye.
+c:/Users/Justin/Desktop/CSC416 $ clisp
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file rbg.l
+T
+[2]> (setf s (rbg-string))
+
+
+(R B G B B R R G G B R G G G R R G B B R B R B G G)
+[3]> s
+
+(R B G B B R R G G B R G G G R R G B B R B R B G G)
+[4]> (setf s (mutation s))
+
+(R B R B B R R G G B R G G G R R G B B R B R B G G)
+[5]> (setf s (mutation s))
+
+(R G R B B R R G G B R G G G R R G B B R B R B G G)
+[6]> (setf s (mutation s))
+
+(R B R B B R R G G B R G G G R R G B B R B R B G G)
+[7]> (setf s (mutation s))
+
+(R B R B B R R G G B R G G G R R G B B R B R B B G)
+[8]> (bye)
+
+Bye.

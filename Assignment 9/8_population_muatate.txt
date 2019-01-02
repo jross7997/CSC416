@@ -1,0 +1,79 @@
+Welcome to the Emacs shell
+
+c:/Emacs/bin $ c:/Users/Justin/Desktop/CSC416
+c:/Users/Justin/Desktop/CSC416 $ clisp
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "tsp.l")
+
+;; Loading file tsp.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file tsp.l
+T
+[2]> (mutate-demo)
+0       (E F H I B C J D A K G)    1173    
+0       (E F H I B C J D A K G)    1173    
+0       (F E H I B C J D A K G)    1042    
+0       (F E H I B C J K A D G)    1028    
+0       (D E H I B C J K A F G)    1097    
+0       (D J H I B C E K A F G)    1153    
+0       (D H J I B C E K A F G)    1202    
+0       (D H J I B C E K F A G)    1107    
+0       (D H J A B C E K F I G)    879     
+0       (D H J A G C E K F I B)    995     
+0       (K H J A G C E D F I B)    1026    
+0       (K H J A G E C D F I B)    1024    
+0       (K H A J G E C D F I B)    938     
+0       (K G A J H E C D F I B)    880     
+0       (K G A J F E C D H I B)    1006    
+0       (K D A J F E C G H I B)    993     
+0       (K D A C F E J G H I B)    1072    
+0       (K A D C F E J G H I B)    1231    
+0       (K A D E F C J G H I B)    1224    
+0       (K A F E D C J G H I B)    1222    
+0       (K A F E D C J G H I B)    1222    
+NIL
+[3]> (maybe-mutate-demo)
+0       (G I H J C E F K D B A)    920     
+0       (G I H J C E F K D B A)    920     
+0       (G I H J C E F K D B A)    920      *
+0       (G I H J C E F K D B A)    920     
+0       (G I H J C E F K D B A)    920     
+0       (B I H J C E F K D G A)    901      *
+0       (B I H J C E F K D G A)    901     
+0       (B I H J C E F K D G A)    901     
+0       (G I H J C E F K D B A)    920      *
+0       (G I H J C E F K D B A)    920      *
+0       (G I H J C E F K D B A)    920      *
+0       (G I H J C E F K D B A)    920     
+0       (B I H J C E F K D G A)    901      *
+0       (B I H J C E F K D G A)    901     
+0       (B I F J C E H K D G A)    827      *
+0       (D I F J C E H K B G A)    1003     *
+0       (D I F J C E H K B G A)    1003    
+0       (D I F J B E H K C G A)    982      *
+0       (D I F J B E H G C K A)    988      *
+0       (D I F J B E H G C A K)    880      *
+0       (D I F J B C H G E A K)    966      *
+NIL
+[4]> (bye)
+
+Bye.
+c:/Users/Justin/Desktop/CSC416 $ 

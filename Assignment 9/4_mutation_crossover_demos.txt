@@ -1,0 +1,103 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "tsp.l")
+
+;; Loading file tsp.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file tsp.l
+T
+[2]> (mutation-demo)
+Test 0
+s = (I E J G A H C B K F D)
+m = (I E J G A H C B K F D)
+Test 1
+s = (I E J G A H C B K F D)
+m = (I E J G A F C B K H D)
+Test 2
+s = (I E J G A F C B K H D)
+m = (I H J G A F C B K E D)
+Test 3
+s = (I H J G A F C B K E D)
+m = (I A J G H F C B K E D)
+Test 4
+s = (I A J G H F C B K E D)
+m = (I A J G H F C B D E K)
+Test 5
+s = (I A J G H F C B D E K)
+m = (I A H G J F C B D E K)
+Test 6
+s = (I A H G J F C B D E K)
+m = (I A H D J F C B G E K)
+Test 7
+s = (I A H D J F C B G E K)
+m = (I H A D J F C B G E K)
+Test 8
+s = (I H A D J F C B G E K)
+m = (I H A D J G C B F E K)
+Test 9
+s = (I H A D J G C B F E K)
+m = (I H A D J G B C F E K)
+NIL
+[3]> (crossover-demo)
+Tst 0
+m = (K D I F J E B C A H G)
+x = (K I D F J E B C A H G)
+f = (I D H F K A E G J C B)
+Tst 1
+m = (K G A F C D H E J B I)
+x = (K G F A C D H E J B I)
+f = (D E K H I C J G F A B)
+Tst 2
+m = (I K J G A B E C F H D)
+x = (I K J G A B E C F H D)
+f = (J H A F I D E K C G B)
+Tst 3
+m = (C E D J I H G F K A B)
+x = (C E D J I H G F K A B)
+f = (D H B E A G I K J C F)
+Tst 4
+m = (D A K E J B F H C G I)
+x = (D A K E J B F H C G I)
+f = (E B C J G A F I H D K)
+Tst 5
+m = (I H C E F D J A K B G)
+x = (A I F D E H B J K C G)
+f = (A I F D E H B J K C G)
+Tst 6
+m = (B K C D G J E H A F I)
+x = (E K A B J G D C F H I)
+f = (E K A B J G D C F H I)
+Tst 7
+m = (J A B D I H C G E K F)
+x = (H I E J D A C B G K F)
+f = (F H I E J D A C B G K)
+Tst 8
+m = (H K G C D F J B A E I)
+x = (H K G F C D J B A E I)
+f = (J A H E K I G F C D B)
+Tst 9
+m = (E I C F K J D H A B G)
+x = (C I E F K J D H A B G)
+f = (H K C I E A B D J G F)
+NIL
+[4]> (bye)
+
+Bye.

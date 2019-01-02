@@ -1,0 +1,84 @@
+
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load "rbg.l")
+
+;; Loading file rbg.l ...
+;;  Loading file lp.l ...
+;;  Loaded file lp.l
+;; Loaded file rbg.l
+T
+[2]> (setf x (rbg-string))
+
+(B R G G G R R G B B R B R B G G B R R R B R R G R)
+[3]> x
+
+(B R G G G R R G B B R B R B G G B R R R B R R G R)
+[4]> (fitness-r x)
+
+11
+[5]> (fitness-b x)
+
+7
+[6]> (fitness-g x)
+
+7
+[7]> (setf fitness #'fitness-r)
+
+#<STANDARD-GENERIC-FUNCTION FITNESS-R>
+[8]> (funcall fitness x)
+
+11
+[9]> (setf fitness #'fitness-b)
+
+#<STANDARD-GENERIC-FUNCTION FITNESS-B>
+[10]> (funcall fitness x)
+
+7
+[11]> (setf fitness #'fitness-g)
+
+#<STANDARD-GENERIC-FUNCTION FITNESS-G>
+[12]> (funcall fitness x)
+
+7
+[13]> (fitness-demo)
+x = (R G B B B R B G R R B G R B B B G G B B R R R G B)
+Directly applying the fitness metrics ... 
+fitness-r = 8
+fitness-b = 11
+fitness-g = 6
+Indirectly applying the fitness metrics ... 
+fitness-r = 8
+fitness-b = 11
+fitness-g = 6
+NIL
+[14]> (fitness-demo)
+x = (R R B B B B G B R R G G G B R R R G B R G B B G G)
+Directly applying the fitness metrics ... 
+fitness-r = 8
+fitness-b = 9
+fitness-g = 8
+Indirectly applying the fitness metrics ... 
+fitness-r = 8
+fitness-b = 9
+fitness-g = 8
+NIL
+[15]> (bye)
+
+Bye.
